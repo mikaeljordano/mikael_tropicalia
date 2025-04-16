@@ -93,8 +93,7 @@
     <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
       <div class="container d-flex align-items-center">
         <div class="col-6 d-flex justify-content-center">
-            <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid" style="max-width: 100%; max-height: 500px; object-fit: cover;" loading="lazy">
-
+          <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid" id="img-brian" style="max-width: 100%; max-height: 500px; object-fit: cover;" loading="lazy">
         </div>
         <div class="col-6 ps-4">
           <h2>Skyline r34</h2>
@@ -175,20 +174,30 @@
 
     // Função para voltar ao tamanho normal ao clicar fora da imagem aumentada
     function restaurarImagem(event) {
-      if (!event.target.closest('.galeria-img')) {
+      if (!event.target.closest('.galeria-img') && !event.target.closest('#img-brian')) {
         const imagens = document.querySelectorAll('.galeria-img');
         imagens.forEach((img) => {
           img.style.transform = 'scale(1)';
           img.style.transition = 'transform 0.3s';
         });
+        // Adicionar também a imagem do Brian
+        const imgBrian = document.querySelector('#img-brian');
+        imgBrian.style.transform = 'scale(1)';
+        imgBrian.style.transition = 'transform 0.3s';
       }
     }
 
-    // Adicionar o evento de duplo clique para as imagens
+    // Adicionar o evento de duplo clique para as imagens da galeria
     const imagens = document.querySelectorAll('.galeria-img');
     imagens.forEach((img) => {
       img.addEventListener('dblclick', aumentarImagem);
     });
+
+    // Adicionar o evento de duplo clique para a imagem do Brian
+    const imgBrian = document.querySelector('#img-brian');
+    if (imgBrian) {
+      imgBrian.addEventListener('dblclick', aumentarImagem);
+    }
 
     // Adicionar o evento de clique fora para restaurar as imagens
     document.addEventListener('click', restaurarImagem);
