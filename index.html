@@ -59,29 +59,7 @@
       height: auto;
       border: 5px solid #FF6347;
       border-radius: 10px;
-      transition: transform 0.3s ease, z-index 0s ease;
-      cursor: pointer;
-    }
-
-    /* Estilo para a imagem ampliada */
-    .img-ampliada {
-      transform: scale(2); /* Aumentando o tamanho da imagem */
-      position: relative;
-      z-index: 999; /* Fazendo com que a imagem fique à frente dos outros elementos */
-    }
-
-    /* Estilo para a mensagem */
-    .aviso {
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 5px;
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 18px;
-      font-weight: bold;
+      transition: transform 0.3s;
     }
   </style>
 </head>
@@ -132,7 +110,6 @@
 
     <section id="galeria">
       <h2 class="text-center pt-5 titulo-medieval">Veja como ele é lindo!</h2>
-      <div class="aviso">Clique duas vezes para aumentar as imagens</div>
       <div class="container p-3 mt-3" style="background: transparent;">
         <div class="row">
           <!-- Coluna esquerda - Skyline normal -->
@@ -183,4 +160,38 @@
   <footer class="text-center p-3 fst-italic">
     <p>Acesse nossas redes:</p>
     <i class="bi bi-whatsapp"></i>
-   
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <script>
+    // Função para aumentar a imagem no duplo clique
+    function aumentarImagem(event) {
+      event.target.style.transform = 'scale(1.5)';
+      event.target.style.transition = 'transform 0.3s';
+    }
+
+    // Função para voltar ao tamanho normal ao clicar fora da imagem aumentada
+    function restaurarImagem(event) {
+      if (!event.target.closest('.galeria-img')) {
+        const imagens = document.querySelectorAll('.galeria-img');
+        imagens.forEach((img) => {
+          img.style.transform = 'scale(1)';
+          img.style.transition = 'transform 0.3s';
+        });
+      }
+    }
+
+    // Adicionar o evento de duplo clique para as imagens
+    const imagens = document.querySelectorAll('.galeria-img');
+    imagens.forEach((img) => {
+      img.addEventListener('dblclick', aumentarImagem);
+    });
+
+    // Adicionar o evento de clique fora para restaurar as imagens
+    document.addEventListener('click', restaurarImagem);
+  </script>
+</body>
+
+</html>
