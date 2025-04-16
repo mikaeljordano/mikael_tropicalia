@@ -61,39 +61,44 @@
       border-radius: 10px;
       transition: transform 0.3s;
     }
+
+    /* Aumentar a visibilidade do foco */
+    :focus {
+      outline: 2px solid #FF6347;
+    }
   </style>
 </head>
 
 <body>
   <header class="p-5">
     <nav class="container d-flex justify-content-between align-items-center">
-      <img src="img site/logo fundo preto.jpg" class="nav-img" style="width: 200px; height: auto;" loading="lazy">
-      <ul class="nav mt-5">
-        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      <img src="img site/logo fundo preto.jpg" alt="Logo Tropicália" class="nav-img" style="width: 200px; height: auto;" loading="lazy" aria-label="Logo Tropicália">
+      <ul class="nav mt-5" aria-label="Navegação principal">
+        <li class="nav-item"><a class="nav-link" href="#inicio" aria-label="Ir para o início">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria" aria-label="Ir para a galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato" aria-label="Ir para o contato">Contato</a></li>
       </ul>
       <div id="acessibilidade" class="menu-acessibilidade">
-        <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
-        <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+        <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A +</button>
+        <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A -</button>
       </div>
     </nav>
   </header>
 
   <main class="container my-5">
-    <section id="inicio" class="my-5">
+    <section id="inicio" class="my-5" aria-labelledby="inicio">
       <div class="inicio-fundo d-flex flex-column align-items-center text-center">
-        <h1 class="display-4 fw-bold titulo-medieval">Skyline r34</h1>
-        <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold mt-3">Quero conhecer!</a>
+        <h1 class="display-4 fw-bold titulo-medieval" id="inicio">Skyline r34</h1>
+        <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold mt-3" aria-label="Conhecer mais sobre o Skyline r34">Quero conhecer!</a>
       </div>
     </section>
 
     <div class="separador"></div>
 
-    <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+    <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" aria-labelledby="tropicalia">
       <div class="container d-flex align-items-center">
         <div class="col-6 d-flex justify-content-center">
-          <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid" id="img-brian" style="max-width: 100%; max-height: 500px; object-fit: cover;" loading="lazy">
+          <img src="img site/brian o'conner.avif" alt="Imagem do Skyline R34 com Brian O'Conner, do filme Velozes e Furiosos" class="img-fluid" id="img-brian" style="max-width: 100%; height: 500px;" loading="lazy">
         </div>
         <div class="col-6 ps-4">
           <h2>Skyline r34</h2>
@@ -108,22 +113,22 @@
 
     <div class="separador"></div>
 
-    <section id="galeria">
+    <section id="galeria" aria-labelledby="galeria">
       <h2 class="text-center pt-5 titulo-medieval">Veja como ele é lindo!</h2>
       <div class="container p-3 mt-3" style="background: transparent;">
         <div class="row">
           <!-- Coluna esquerda - Skyline normal -->
           <div class="col-md-6 d-flex flex-column align-items-center mb-4">
             <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline normal</h3>
-            <img src="img site/nissan-gtr-r34-vermelho.webp" alt="R34 vermelho" loading="lazy" class="galeria-img mb-4" id="img1">
-            <img src="img site/sky normal 2.jpg" alt="Skyline do Brian" loading="lazy" class="galeria-img" id="img2">
+            <img src="img site/nissan-gtr-r34-vermelho.webp" alt="Imagem do Skyline R34 vermelho" loading="lazy" class="galeria-img mb-4" id="img1">
+            <img src="img site/sky normal 2.jpg" alt="Imagem do Skyline R34, com destaque para o carro do Brian O'Conner" loading="lazy" class="galeria-img" id="img2">
           </div>
 
           <!-- Coluna direita - Skyline tunado -->
           <div class="col-md-6 d-flex flex-column align-items-center mb-4">
             <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline tunado</h3>
-            <img src="img site/libert walk.jpg" alt="Skyline com bodykit 1" loading="lazy" class="galeria-img mb-4" id="img3">
-            <img src="img site/tunado 2.jpg" alt="Skyline com bodykit 2" loading="lazy" class="galeria-img" id="img4">
+            <img src="img site/libert walk.jpg" alt="Imagem do Skyline R34 tunado com bodykit" loading="lazy" class="galeria-img mb-4" id="img3">
+            <img src="img site/tunado 2.jpg" alt="Skyline R34 tunado com bodykit" loading="lazy" class="galeria-img" id="img4">
           </div>
         </div>
       </div>
@@ -131,10 +136,10 @@
 
     <div class="separador"></div>
 
-    <section id="contato">
+    <section id="contato" aria-labelledby="contato">
       <div class="container p-5 d-flex justify-content-center">
         <div class="col-md-8 col-lg-10 rounded-5 formulario">
-          <h2 class="mb-3 titulo-medieval">Entre em contato</h2>
+          <h2 class="mb-3 titulo-medieval" id="contato">Entre em contato</h2>
           <form>
             <div class="form-group mb-3">
               <label for="nome">Nome</label>
@@ -159,49 +164,12 @@
 
   <footer class="text-center p-3 fst-italic">
     <p>Acesse nossas redes:</p>
-    <i class="bi bi-whatsapp"></i>
-    <i class="bi bi-instagram"></i>
-    <i class="bi bi-tiktok"></i>
+    <i class="bi bi-whatsapp" aria-label="WhatsApp"></i>
+    <i class="bi bi-instagram" aria-label="Instagram"></i>
+    <i class="bi bi-tiktok" aria-label="TikTok"></i>
     <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
   </footer>
 
   <script>
     // Função para aumentar a imagem no duplo clique
-    function aumentarImagem(event) {
-      event.target.style.transform = 'scale(1.5)';
-      event.target.style.transition = 'transform 0.3s';
-    }
-
-    // Função para voltar ao tamanho normal ao clicar fora da imagem aumentada
-    function restaurarImagem(event) {
-      if (!event.target.closest('.galeria-img') && !event.target.closest('#img-brian')) {
-        const imagens = document.querySelectorAll('.galeria-img');
-        imagens.forEach((img) => {
-          img.style.transform = 'scale(1)';
-          img.style.transition = 'transform 0.3s';
-        });
-        // Adicionar também a imagem do Brian
-        const imgBrian = document.querySelector('#img-brian');
-        imgBrian.style.transform = 'scale(1)';
-        imgBrian.style.transition = 'transform 0.3s';
-      }
-    }
-
-    // Adicionar o evento de duplo clique para as imagens da galeria
-    const imagens = document.querySelectorAll('.galeria-img');
-    imagens.forEach((img) => {
-      img.addEventListener('dblclick', aumentarImagem);
-    });
-
-    // Adicionar o evento de duplo clique para a imagem do Brian
-    const imgBrian = document.querySelector('#img-brian');
-    if (imgBrian) {
-      imgBrian.addEventListener('dblclick', aumentarImagem);
-    }
-
-    // Adicionar o evento de clique fora para restaurar as imagens
-    document.addEventListener('click', restaurarImagem);
-  </script>
-</body>
-
-</html>
+   
