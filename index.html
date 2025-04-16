@@ -2,165 +2,156 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tropicália</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropicália</title>
 
-    <!-- Fontes e estilos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <!-- Fontes e estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap e ícones -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap e ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
 
-    <style>
-        body {
-            background-color: #000;
-            color: white;
-        }
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+    }
 
-        h1, h2 {
-            color: red !important;
-        }
+    h1,
+    h2,
+    h3 {
+      color: red !important;
+    }
 
-        p, label, a, button, textarea, input {
-            color: white !important;
-        }
+    p,
+    label,
+    a,
+    button,
+    textarea,
+    input {
+      color: white !important;
+    }
 
-        .titulo-medieval {
-            font-family: 'MedievalSharp', cursive;
-        }
+    .formulario {
+      background-color: #1c1c1c;
+      padding: 30px;
+      box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.3);
+    }
 
-        .hr-separator {
-            width: 80%;
-            margin-top: 30px;
-            border-color: #FF6347;
-        }
-
-        .bordered-image {
-            width: 90%;
-            height: auto;
-            border: 5px solid #FF6347;
-            border-radius: 10px;
-        }
-    </style>
+    .titulo-medieval {
+      font-family: 'MedievalSharp', cursive;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="p-5">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img site/logo fundo preto.jpg" class="nav-img" style="width: 200px; height: auto;" loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
-            </div>
-        </nav>
-    </header>
+  <header class="p-5">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img site/logo fundo preto.jpg" class="nav-img" style="width: 200px; height: auto;" loading="lazy">
+      <ul class="nav mt-5">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
+        <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+      </div>
+    </nav>
+  </header>
 
-    <main class="container my-5">
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 fst-medieval fw-bold">Skyline r34</h1>
-                    <img src="" class="" height="278" loading="lazy">
-                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+  <main class="container my-5">
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex flex-column align-items-center text-center">
+        <h1 class="display-4 fw-bold titulo-medieval">Skyline r34</h1>
+        <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold mt-3">Quero conhecer!</a>
+      </div>
+    </section>
+
+    <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+      <div class="container d-flex align-items-center">
+        <div class="col-6 d-flex justify-content-center">
+          <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid" style="max-width: 100%; height: 500px;" loading="lazy">
+        </div>
+        <div class="col-6 ps-4">
+          <h2>Skyline r34</h2>
+          <p>O Skyline GT-R R34 é um carro esportivo japonês produzido entre 1999 e 2002 pela Nissan. Ele usa o lendário motor RB26DETT, um 2.6L biturbo de 6 cilindros em linha, com tração integral e câmbio manual de 6 marchas. Apesar de vir de fábrica com 280 cv, é famoso pelo seu enorme potencial de preparação.</p>
+          <p>- Desempenho e potencial de preparação: O motor RB26DETT é super resistente e pode facilmente chegar a 500+ cv com modificações básicas.</p>
+          <p>- Tecnologia avançada: Tração inteligente nas quatro rodas, direção nas quatro rodas (Super-HICAS), e uma tela multifuncional no painel mostrando dados em tempo real do carro.</p>
+          <p>- Design icônico: Linhas agressivas, lanternas traseiras redondas e visual inconfundível.</p>
+          <p>- Cultura pop: Famoso por ser o carro do Brian O'Conner (Paul Walker) nos filmes Velozes e Furiosos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+        <h2 class="text-center pt-5 titulo-medieval">Veja como ele é lindo!</h2>
+      
+        <div class="container p-3 mt-3" style="background: transparent;">
+            <div class="row">
+                <!-- Coluna esquerda - Skyline normal -->
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline normal</h3>
+                    <img src="img site/nissan-gtr-r34-vermelho.webp" alt="R34 vermelho" loading="lazy"
+                         style="width: 90%; height: auto; border: 5px solid #FF6347; border-radius: 10px;">
+                    <img src="img site/sky normal 2.jpg" alt="Skyline do Brian" loading="lazy"
+                         style="width: 90%; height: auto; border: 5px solid #FF6347; border-radius: 10px; margin-top: 20px;">
+                </div>
+      
+                <!-- Coluna direita - Skyline tunado -->
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline tunado</h3>
+                    <img src="img site/libert walk.jpg" alt="Skyline com bodykit 1" loading="lazy"
+                         style="width: 90%; height: auto; border: 5px solid #FF6347; border-radius: 10px;">
+                    <img src="img site/tunado 2.jpg" alt="Skyline com bodykit 2" loading="lazy"
+                         style="width: 90%; height: auto; border: 5px solid #FF6347; border-radius: 10px; margin-top: 20px;">
                 </div>
             </div>
-            <hr class="hr-separator">
-        </section>
+        </div>
+    </section>
+      
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-            <div class="container d-flex align-items-center">
-                <div class="col-4 d-flex justify-content-center">
-                    <img src="img site/brian o'conner.avif" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>Skyline r34</h2>
-                    <p class="p-2">O Skyline GT-R R34 é um carro esportivo japonês produzido entre 1999 e 2002 pela Nissan. Ele usa o lendário motor RB26DETT, um 2.6L biturbo de 6 cilindros em linha, com tração integral e câmbio manual de 6 marchas. Apesar de vir de fábrica com 280 cv, é famoso pelo seu enorme potencial de preparação.</p>
-                    <p>- Desempenho e potencial de preparação: O motor RB26DETT é super resistente e pode facilmente chegar a 500+ cv com modificações básicas.</p>
-                    <p>- Tecnologia avançada: Tração inteligente nas quatro rodas, direção nas quatro rodas (Super-HICAS), e uma tela multifuncional no painel mostrando dados em tempo real do carro.</p>
-                    <p>- Design icônico: Linhas agressivas, lanternas traseiras redondas e visual inconfundível.</p>
-                    <p>- Cultura pop: Famoso por ser o carro do Brian O'Conner (Paul Walker) nos filmes Velozes e Furiosos.</p>
-                </div>
+    <section id="contato">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario">
+          <h2 class="mb-3 titulo-medieval">Entre em contato</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
             </div>
-        </section>
-
-        <section id="galeria">
-            <h2 class="text-center pt-5 titulo-medieval">Veja como ele é lindo!</h2>
-          
-            <div class="container p-3 mt-3" style="background: transparent;">
-                <div class="row">
-                    <!-- Coluna esquerda - Skyline normal -->
-                    <div class="col-md-6 d-flex flex-column align-items-center">
-                        <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline normal</h3>
-                        <img src="img site/nissan-gtr-r34-vermelho.webp" alt="R34 vermelho" loading="lazy"
-                             class="bordered-image">
-                        <img src="img site/sky normal 2.jpg" alt="Skyline do Brian" loading="lazy"
-                             class="bordered-image mt-4">
-                        <!-- Separador após as imagens da esquerda -->
-                        <hr class="hr-separator">
-                    </div>
-          
-                    <!-- Coluna direita - Skyline tunado -->
-                    <div class="col-md-6 d-flex flex-column align-items-center">
-                        <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline r34 com body kit</h3>
-                        <img src="img site/libert walk.jpg" alt="Skyline com bodykit 1" loading="lazy"
-                             class="bordered-image">
-                        <img src="img site/tunado 2.jpg" alt="Skyline com bodykit 2" loading="lazy"
-                             class="bordered-image mt-4">
-                        <!-- Separador após as imagens da direita -->
-                        <hr class="hr-separator">
-                    </div>
-                </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
             </div>
-        </section>
-
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario">
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
             </div>
-            <!-- Separador antes da seção "Entre em contato" -->
-            <hr class="hr-separator">
-        </section>
-    </main>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
-    </footer>
+  <footer class="text-center p-3 fst-italic">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
