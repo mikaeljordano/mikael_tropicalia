@@ -51,7 +51,7 @@
       margin: 60px 0;
     }
 
-    /* Imagens da galeria */
+    /* Efeito para as imagens */
     .galeria-img {
       width: 90%;
       height: auto;
@@ -164,15 +164,15 @@
           <!-- Coluna esquerda - Skyline normal -->
           <div class="col-md-6 d-flex flex-column align-items-center">
             <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline normal</h3>
-            <img src="img site/nissan-gtr-r34-vermelho.webp" alt="R34 vermelho" loading="lazy" class="galeria-img">
-            <img src="img site/sky normal 2.jpg" alt="Skyline do Brian" loading="lazy" class="galeria-img mt-4">
+            <img src="img site/nissan-gtr-r34-vermelho.webp" alt="R34 vermelho" loading="lazy" class="galeria-img" onmousedown="this.style.transform='scale(1.2)';" onmouseup="this.style.transform='scale(1)';">
+            <img src="img site/sky normal 2.jpg" alt="Skyline do Brian" loading="lazy" class="galeria-img" onmousedown="this.style.transform='scale(1.2)';" onmouseup="this.style.transform='scale(1)';">
           </div>
 
           <!-- Coluna direita - Skyline tunado -->
           <div class="col-md-6 d-flex flex-column align-items-center">
             <h3 class="titulo-medieval text-danger mb-4 text-center">Skyline tunado</h3>
-            <img src="img site/libert walk.jpg" alt="Skyline com bodykit 1" loading="lazy" class="galeria-img">
-            <img src="img site/tunado 2.jpg" alt="Skyline com bodykit 2" loading="lazy" class="galeria-img mt-4">
+            <img src="img site/libert walk.jpg" alt="Skyline com bodykit 1" loading="lazy" class="galeria-img" onmousedown="this.style.transform='scale(1.2)';" onmouseup="this.style.transform='scale(1)';">
+            <img src="img site/tunado 2.jpg" alt="Skyline com bodykit 2" loading="lazy" class="galeria-img" onmousedown="this.style.transform='scale(1.2)';" onmouseup="this.style.transform='scale(1)';">
           </div>
         </div>
       </div>
@@ -204,3 +204,17 @@
         </div>
       </div>
     </section>
+  </main>
+
+  <footer class="text-center p-3 fst-italic">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
