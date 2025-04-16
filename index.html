@@ -59,7 +59,32 @@
       height: auto;
       border: 5px solid #FF6347;
       border-radius: 10px;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease, z-index 0s ease;
+      cursor: pointer;
+    }
+
+    /* Estilo para a imagem ampliada */
+    .img-ampliada {
+      transform: scale(2);
+      z-index: 999;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(2);
+    }
+
+    /* Estilo para a mensagem */
+    .aviso {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -110,6 +135,7 @@
 
     <section id="galeria">
       <h2 class="text-center pt-5 titulo-medieval">Veja como ele é lindo!</h2>
+      <div class="aviso">Clique duas vezes para aumentar as imagens</div>
       <div class="container p-3 mt-3" style="background: transparent;">
         <div class="row">
           <!-- Coluna esquerda - Skyline normal -->
@@ -168,17 +194,15 @@
   <script>
     // Função para aumentar a imagem no duplo clique
     function aumentarImagem(event) {
-      event.target.style.transform = 'scale(1.5)';
-      event.target.style.transition = 'transform 0.3s';
+      event.target.classList.add('img-ampliada');
     }
 
-    // Função para voltar ao tamanho normal ao clicar fora da imagem aumentada
+    // Função para restaurar a imagem quando clicar fora
     function restaurarImagem(event) {
       if (!event.target.closest('.galeria-img')) {
         const imagens = document.querySelectorAll('.galeria-img');
         imagens.forEach((img) => {
-          img.style.transform = 'scale(1)';
-          img.style.transition = 'transform 0.3s';
+          img.classList.remove('img-ampliada');
         });
       }
     }
