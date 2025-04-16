@@ -18,8 +18,12 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+    * {
+      transition: all 0.3s ease-in-out;
+    }
+
     body {
-      background-color: #000;
+      background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
       color: white;
     }
 
@@ -38,6 +42,17 @@
       color: white !important;
     }
 
+    button:hover,
+    .btn:hover {
+      background-color: #ff0000 !important;
+      color: white !important;
+      transform: scale(1.05);
+    }
+
+    img {
+      box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+    }
+
     .formulario {
       background-color: #1c1c1c;
       padding: 30px;
@@ -46,11 +61,14 @@
 
     .titulo-medieval {
       font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 6px rgba(255, 0, 0, 0.7);
+      letter-spacing: 1px;
     }
 
     .separador {
-      border-top: 5px solid red;
-      margin: 60px 0;
+      border-top: 6px double red;
+      margin: 80px 0;
+      box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -82,21 +100,20 @@
     <div class="separador"></div>
 
     <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-        <div class="container d-flex align-items-center flex-wrap">
-          <div class="col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid rounded" style="max-width: 100%; height: auto; object-fit: cover;" loading="lazy">
-          </div>
-          <div class="col-12 col-md-6 ps-md-4">
-            <h2 class="titulo-medieval">Skyline r34</h2>
-            <p>O Skyline GT-R R34 é um carro esportivo japonês produzido entre 1999 e 2002 pela Nissan. Ele usa o lendário motor RB26DETT, um 2.6L biturbo de 6 cilindros em linha, com tração integral e câmbio manual de 6 marchas. Apesar de vir de fábrica com 280 cv, é famoso pelo seu enorme potencial de preparação.</p>
-            <p>- Desempenho e potencial de preparação: O motor RB26DETT é super resistente e pode facilmente chegar a 500+ cv com modificações básicas.</p>
-            <p>- Tecnologia avançada: Tração inteligente nas quatro rodas, direção nas quatro rodas (Super-HICAS), e uma tela multifuncional no painel mostrando dados em tempo real do carro.</p>
-            <p>- Design icônico: Linhas agressivas, lanternas traseiras redondas e visual inconfundível.</p>
-            <p>- Cultura pop: Famoso por ser o carro do Brian O'Conner (Paul Walker) nos filmes Velozes e Furiosos.</p>
-          </div>
+      <div class="container d-flex align-items-center">
+        <div class="col-6 d-flex justify-content-center">
+          <img src="img site/brian o'conner.avif" alt="Brian O'Conner e Skyline R34" class="img-fluid" style="max-width: 100%; height: auto; max-height: 500px; object-fit: cover;" loading="lazy">
         </div>
-      </section>
-      
+        <div class="col-6 ps-4">
+          <h2>Skyline r34</h2>
+          <p>O Skyline GT-R R34 é um carro esportivo japonês produzido entre 1999 e 2002 pela Nissan. Ele usa o lendário motor RB26DETT, um 2.6L biturbo de 6 cilindros em linha, com tração integral e câmbio manual de 6 marchas. Apesar de vir de fábrica com 280 cv, é famoso pelo seu enorme potencial de preparação.</p>
+          <p>- Desempenho e potencial de preparação: O motor RB26DETT é super resistente e pode facilmente chegar a 500+ cv com modificações básicas.</p>
+          <p>- Tecnologia avançada: Tração inteligente nas quatro rodas, direção nas quatro rodas (Super-HICAS), e uma tela multifuncional no painel mostrando dados em tempo real do carro.</p>
+          <p>- Design icônico: Linhas agressivas, lanternas traseiras redondas e visual inconfundível.</p>
+          <p>- Cultura pop: Famoso por ser o carro do Brian O'Conner (Paul Walker) nos filmes Velozes e Furiosos.</p>
+        </div>
+      </div>
+    </section>
 
     <div class="separador"></div>
 
